@@ -1,0 +1,187 @@
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void)
+{
+	/*int ag = 15;
+	if(ag >= 20)
+		printf("일반");
+		
+	else
+		printf("학생");
+	*/
+	
+/*	int ag1;
+	printf("나이 : ");
+	scanf_s("%d", &ag1);
+	
+	if(ag1 >= 8 && ag1 <=13)
+	{
+		printf("초등\n");
+	 } 
+	else if(ag1 >= 14 && ag1 <= 16)
+	{
+		printf("중등");
+	}
+	else if(ag1 >= 17 && ag1 <= 19)
+	{
+		printf("고등");
+	}
+	else if(ag1 >= 20 && ag1 <= 40)
+	{
+		printf("청년");
+	}
+	else if(ag1 >= 40 && ag1 <= 60)
+	{
+		printf("중년");
+	}
+	else if(ag1 >= 60 && ag1 <= 99)
+	{
+		printf("노년");
+	}
+	else if(ag1 >= 0 && ag1 <= 7)
+	{
+		printf("유아");
+	}*/
+	
+	/*int cu;
+	printf("몇번까지 : ");
+	scanf("%d", &cu);
+
+	for (int i = 1; i <= cu; i++)
+	{
+		if (i >= cu + 1)
+		{
+			printf("나머지 집ㄱㄱ\n");
+			break;
+		}
+		printf("%d번 발표준비\n", i);
+	}*/
+		
+	/*for (int i = 1; i <= 30; i++)
+	{
+		if (i >= 6 && i <= 10)
+		{
+			if ( i == 7)
+			{
+				printf("%d번은 결석\n", i);
+				continue;
+			}
+		}
+		printf("%d번 발표준비\n", i);
+	}
+	*/
+	
+/*	int cu1,cu2,dcu;
+	printf("몇번부터 : ");
+	scanf("%d", &cu1);
+	printf("몇번까지 : ");
+	scanf("%d", &cu2);
+	printf("결석 : ");
+	scanf("%d", &dcu);
+
+	for (int i = cu1; i <= cu2; i++)
+	{
+		if (i >= cu1 + 1 && i <= cu2)
+		{
+			if ( i == dcu)
+			{
+				printf("%d번은 결석\n", i);
+				continue;
+			}
+		}
+		printf("%d번 발표준비\n", i);
+	}
+*/	
+	/*
+	int a=10;
+	int b=11;
+	int c=13;
+	int d=13;
+	if (a==b || c==d)
+	{
+		printf("a b 또는 c d 같음");
+	}
+	else
+	{
+		printf("값이 서로 다름");
+	} 
+	*/
+	//srand(time(NULL));
+	 //int nu = rand() %3 + 1;
+	/*printf("난수 초기화 이전 \n");
+	for (int i=0; i<10; i++)
+		printf("%d ", rand() %10);
+	
+	srand(time(NULL));
+	printf("\n\n난수 초기화 이후 \n");
+	for (int i=0; i<10; i++)
+		printf("%d ", rand() %10);
+	*/
+	
+/*	srand(time(NULL));
+	int i=rand() %3;
+	if (i==0)
+	{
+		printf("가위\n");
+	}	
+	else if (i==1)
+	{
+		printf("가위\n");
+	}	
+	else if (i==3)
+	{
+		printf("가위\n");
+	}	
+	else
+	{
+		printf("몰?루?\n");
+	}
+	
+*/
+/*	srand(time(NULL));
+	int i=rand() %3;
+	switch (i)
+	{
+		case 0:printf("가위\n"); break;
+		case 1:printf("바위\n"); break;
+		case 2:printf("보\n"); break;
+		default:printf("몰?루?\n"); break;
+		
+	}
+*/
+
+/*	int ag1;
+	printf("나이 : ");
+	scanf("%d", &ag1);
+	
+	switch (ag1)
+	{
+	case 0:
+	case 1:
+	case 2:
+	case 3:
+	case 4:
+	case 5:
+	case 6:
+	case 7:printf("유아.\n"); break;
+	case 8:
+	case 9:
+	case 10:
+	case 11:
+	case 12:
+	case 13:printf("초등입니다.\n"); break;
+	case 14:
+	case 15:
+	case 16:printf("중등입니다.\n"); break;
+	case 17:
+	case 18:
+	case 19:printf("고등입니다.\n"); break;
+	default : printf("성인입니다.\n"); break;
+		
+	}
+*/
+				
+	return 0;	
+}
