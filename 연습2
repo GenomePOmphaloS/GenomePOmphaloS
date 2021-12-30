@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int main(void)
+{
+
+	// 프로젝트
+	//경찰관 조서
+	//scanf_s는 비주얼 스튜디오 전용 함수(표준아님) 
+	
+	char na[256], wa[256], he[256], ti[256];
+	printf("죄목 : ");
+	scanf_s("%[^\n]s", wa, sizeof(wa));
+	printf("장소 : ");
+	scanf_s(" %[^\n]s", he, sizeof(he));
+	printf("시간 : ");
+	scanf_s(" %[^\n]s", ti, sizeof(ti));
+	printf("이름 : ");
+	scanf_s(" %[^\n]s", na, sizeof(na));
+	
+	int ag;
+	printf("나이 : ");
+	scanf_s("%d", &ag);
+	
+	double hi;
+	printf("키 : ");
+	scanf_s("%lf", &hi);
+	
+	float we;
+	printf("몸무게 : " );
+	scanf_s("%f", &we);
+	
+	char ho[256], wy[256];
+	printf("거주지 : ");
+	scanf_s(" %[^\n]s", ho, sizeof(ho));
+	printf("범행동기 : ");
+	scanf_s(" %[^\n]s", wy, sizeof(wy));
+	
+	printf("\n\n --- 범죄자 정보 ---\n\n");
+	printf("죄목		: %s\n", wa);
+	printf("장소		: %s\n", he);
+	printf("시간		: %s\n", ti);
+	printf("이름		: %s 님\n", na);
+	printf("나이		: %d 세\n", ag);
+	printf("몸무게		: %.2f kg\n", we);
+	printf("키		: %.2lf cm\n", hi);
+	printf("거주지		: %s\n", ho);
+	printf("범행동기	: %s\n", wy);
+	
+	return 0;	
+}
