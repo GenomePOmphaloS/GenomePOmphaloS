@@ -1,0 +1,66 @@
+//연습1
+
+#include <stdio.h>
+
+int main(void)
+
+{
+	int a = 12;
+	printf("%d\n", a);
+	int b = 13;
+	printf("%d\n", b);
+	
+	float f = 46.5f;
+	printf("%.2f\n", f);
+
+	double d = 4.428;
+	printf("%.2lf\n", d);
+
+	const int Y = 1994;
+	printf("태어난 연도 : %d\n", Y);
+
+	int add = 3 + 7, add2 = 3*7;
+	printf("3+7=%d\n", add);
+	printf("%d+%d=%d\n", 3, 7, 3 + 7);
+	printf("3X7=%d\n", add2);
+	printf("%dX%d=%d\n", 3, 7, 3 * 7);
+
+	int input;
+	printf("값을 입력하세요. : ");
+	scanf_s("%d", &input);
+	printf("입력값 : %d\n", input);
+	
+	int o01, t01, t201, o02, t02, t202;
+	printf("3개의 정수를 입력하세요 : ");
+	scanf_s("%d %d %d", &o01, &t01, &t201);
+	printf("첫번째 입력값 : %d\n", o01);
+	printf("두번째 입력값 : %d\n", t01);
+	printf("세번째 입력값 : %d\n", t201);
+	printf("첫번째 : ");
+	scanf_s("%d", &o02);
+	printf("두번째 : ");
+	scanf_s("%d", &t02);
+	printf("세번째 : ");
+	scanf_s("%d", &t202);
+	printf("첫번째 입력값 : %d\n", o02);
+	printf("두번째 입력값 : %d\n", t02);
+	printf("세번째 입력값 : %d\n", t202);
+	printf("전체 합 : %d\n", o02+t02+t202);
+	printf("전체 곱 : %d\n", o02*t02*t202);
+	
+	char c = 'A';
+	printf("%c\n", c );
+	
+	char str[256];
+	scanf_s("%[^\n]s", str, sizeof(str));
+	printf("%s\n", str);
+	
+	char st[256];
+	scanf_s(" %[^\n]s", st, sizeof(st));
+	printf("%s\n", st);
+	
+	
+	
+	
+	return 0;	
+}
