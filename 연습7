@@ -1,0 +1,46 @@
+#include <time.h>
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void)
+{
+	srand(time(NULL));
+	int nu = rand() %100 +1;
+	//printf("숫자 : %d\n", nu);
+	int an = 0; //정답
+	int ch = 10; //기회
+	while (ch>0) //while(1)로 대체 가능 
+	{
+		printf("기회 %d 번\n", ch--);
+		printf("숫자 찍기 : ");
+		scanf("%d", &an);
+		
+		if (an > nu)
+		{
+			printf("Down ↓\n\n");
+		}
+		else if (an < nu)
+		{
+			printf("Up ↑\n\n");
+		}	
+		else if (an == nu)
+		{
+			printf("정답!\n\n");
+			break;
+		}
+		else
+		{
+			printf("알수 없는 오류 발생\n\n");
+		}
+		
+		if (ch == 0)
+		{
+			printf("기회 없음.\n\n");
+			break;
+		}
+	}	
+	
+	
+	
+	return 0; 
+}
